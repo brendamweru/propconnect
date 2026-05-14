@@ -1,11 +1,13 @@
 <?php
-session_start();
-require("config.php");
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
+require_once __DIR__ . '/config.php';
 ////code
  
-if(!isset($_SESSION['auser']))
-{
-	header("location:index.php");
+if (!isset($_SESSION['auser'])) {
+    header("location:index.php");
+    exit;
 }
 ?>  
   <div class="header">

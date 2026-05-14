@@ -1,6 +1,6 @@
 **Log on to https://scriptandtools.com/ for more projects!***
 
-**Database Name: realestatephp**
+**Database Name: propconnectphp**
 
 **Developed by Webpenter.com/Rana Abdul Khaliq**
 

@@ -43,7 +43,7 @@
 │                             │                                              │
 │                    ┌────────▼────────┐                                     │
 │                    │   MySQL Database │                                    │
-│                    │  (realestatephp)  │                                    │
+│                    │  (propconnectphp) │                                    │
 │                    └──────────────────┘                                    │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
@@ -70,7 +70,7 @@
 
 ```php
 // config.php & admin/config.php
-$con = mysqli_connect("localhost", "root", "", "realestatephp");
+$con = mysqli_connect("localhost", "root", "", "propconnectphp");
 ```
 
 ---
@@ -290,7 +290,7 @@ class StripePayment {
 ```env
 # Database
 DB_HOST=localhost
-DB_NAME=realestatephp
+DB_DATABASE=propconnectphp
 DB_USER=root
 DB_PASS=
 
@@ -656,8 +656,8 @@ home-park-real-estate/
 
 ### Database Setup
 
-1. Create database: `realestatephp`
-2. Import `realestatephp.sql` from DATABASE folder
+1. Create database: `propconnectphp`
+2. Import `propconnectphp.sql` from DATABASE folder
 3. Configure connection in `config.php` and `admin/config.php`
 
 ---

@@ -52,24 +52,32 @@ if (EnvLoader::isDebug()) {
 }
 
 // Helper function for getting site URL
-function getSiteUrl(): string 
-{
-    return EnvLoader::get('APP_URL', 'http://localhost');
+if (!function_exists('getSiteUrl')) {
+    function getSiteUrl(): string 
+    {
+        return EnvLoader::get('APP_URL', 'http://localhost');
+    }
 }
 
 // Helper function for getting payment settings
-function getPaymentSettings(): array 
-{
-    return EnvLoader::getPaymentSettings();
+if (!function_exists('getPaymentSettings')) {
+    function getPaymentSettings(): array 
+    {
+        return EnvLoader::getPaymentSettings();
+    }
 }
 
 // Helper function for currency
-function getCurrency(): string 
-{
-    return EnvLoader::get('PAYMENT_CURRENCY', 'KES');
+if (!function_exists('getCurrency')) {
+    function getCurrency(): string 
+    {
+        return EnvLoader::get('PAYMENT_CURRENCY', 'KES');
+    }
 }
 
-function getCurrencySymbol(): string 
-{
-    return EnvLoader::get('PAYMENT_CURRENCY_SYMBOL', 'KSh');
+if (!function_exists('getCurrencySymbol')) {
+    function getCurrencySymbol(): string 
+    {
+        return EnvLoader::get('PAYMENT_CURRENCY_SYMBOL', 'KSh');
+    }
 }

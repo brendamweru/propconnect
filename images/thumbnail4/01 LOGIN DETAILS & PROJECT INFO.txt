@@ -1,6 +1,6 @@
 **Log on to codeastro.com for more projects!***
 
-**Database Name: realestatephp**
+**Database Name: propconnectphp**
 
 **Developed by Suraj Kumar Vishwakarma**
 

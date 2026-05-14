@@ -106,9 +106,9 @@ class EnvLoader
     public static function getDatabaseConfig()
     {
         return [
-            'host'     => self::get('DB_HOST', 'localhost'),
-            'port'     => self::get('DB_PORT', '3306'),
-            'database' => self::get('DB_DATABASE', 'realestatephp'),
+            'host'     => self::get('DB_HOST', '127.0.0.1'),
+            'port'     => intval(self::get('DB_PORT', '3306')),
+            'database' => self::get('DB_DATABASE', 'propconnectphp'),
             'username' => self::get('DB_USERNAME', 'root'),
             'password' => self::get('DB_PASSWORD', ''),
         ];

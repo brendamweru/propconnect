@@ -99,9 +99,9 @@ Now Connecting Database
 
 5th Step:  Click on the databases tab
 
-6th Step: Create a database named “realestatephp” and then click on the import tab
+6th Step: Create a database named “propconnectphp” and then click on the import tab
 
-7th Step: Click on browse file and select “realestatephp.sql” file which is inside “DATABASE” folder
+7th Step: Click on browse file and select “propconnectphp.sql” file which is inside “DATABASE” folder
 
 8th Step: Click on go.
 
@@ -110,11 +110,11 @@ Now Connecting Database
 Update the admin credentials in the database using phpMyAdmin or MySQL command:
 
 ```sql
-UPDATE admin SET auser = 'adminkenya@gmail.com', apass = '13612d85bdf9e94d6025cb10a212e60c0a7b0ee0' WHERE aid = 1;
+UPDATE admin SET auser = 'admin@propconnect.com', aemail = 'admin@propconnect.com', apass = '495d5014b0f14f0f6168106ede664111fb3162dd' WHERE aid = 1;
 ```
 
-- **Username:** adminkenya@gmail.com
-- **Password:** KenyaRealEstate2024
+- **Username:** admin@propconnect.com
+- **Password:** PropConnect!2026
 
 Access the admin panel at `http://localhost/home-park-real-estate/admin` and log in with these credentials.
 
